@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Become a Costech Distributor — Africa's TIJ Coding & Marking Network</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink:     #0b1120;
+    --navy:    #0f2a5e;
+    --blue:    #1a4faa;
+    --sky:     #2d8cff;
+    --gold:    #f0a500;
+    --gold-lt: #fff3d0;
+    --white:   #ffffff;
+    --off:     #f5f7fc;
+    --grey:    #6b7a99;
+    --border:  #dce6f5;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--ink); overflow-x: hidden; }
+
+  /* ── TOPBAR ── */
+  .topbar {
+    background: var(--gold);
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--ink);
+    letter-spacing: 0.04em;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(11,17,32,0.97);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6%;
+    height: 68px;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+  }
+
+  .nav-brand {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--white);
+    text-decoration: none;
+    letter-spacing: 0.02em;
+  }
+
+  .nav-brand span { color: var(--gold); }
+
+  .nav-cta {
+    padding: 9px 22px;
+    background: var(--gold);
+    color: var(--ink);
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    transition: opacity 0.2s;
+  }
+
+  .nav-cta:hover { opacity: 0.88; }
+
+  /* ── HERO ── */
+  .hero {
+    background: var(--ink);
+    position: relative;
+    overflow: hidden;
+    padding: 90px 6% 80px;
+    min-height: 88vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 60% 50% at 80% 50%, rgba(26,79,170,0.25) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 60% at 10% 80%, rgba(240,165,0,0.08) 0%, transparent 60%);
+  }
+
+  .hero-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+
+  .hero-content {
+    position: relative;
+    max-width: 760px;
+  }
+
+  .hero-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(240,165,0,0.12);
+    border: 1px solid rgba(240,165,0,0.3);
+    border-radius: 30px;
+    padding: 6px 16px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--gold);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+  }
+
+  .hero-pill::before {
+    content: '';
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: var(--gold);
+    animation: pulse 1.8s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(1.5); }
+  }
+
+  .hero h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(2.2rem, 5vw, 3.6rem);
+    font-weight: 800;
+    color: var(--white);
+    line-height: 1.1;
+    margin-bottom: 24px;
+    letter-spacing: -0.01em;
+  }
+
+  .hero h1 em {
+    font-style: normal;
+    color: var(--gold);
+  }
+
+  .hero p {
+    font-size: 1.05rem;
+    color: rgba(255,255,255,0.65);
+    line-height: 1.7;
+    max-width: 580px;
+    margin-bottom: 40px;
+  }
+
+  .hero-btns {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .btn-gold {
+    padding: 15px 32px;
+    background: var(--gold);
+    color: var(--ink);
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    transition: opacity 0.2s, transform 0.2s;
+  }
+
+  .btn-gold:hover { opacity: 0.9; transform: translateY(-2px); }
+
+  .btn-ghost {
+    padding: 15px 32px;
+    border: 1.5px solid rgba(255,255,255,0.25);
+    color: var(--white);
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: border-color 0.2s;
+  }
+
+  .btn-ghost:hover { border-color: rgba(255,255,255,0.6); }
+
+  .hero-stats {
+    display: flex;
+    gap: 40px;
+    margin-top: 60px;
+    flex-wrap: wrap;
+  }
+
+  .hstat { }
+  .hstat-num {
+    font-family: 'Syne', sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--gold);
+  }
+  .hstat-label {
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.45);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-top: 2px;
+  }
+
+  /* ── SECTION BASE ── */
+  section { padding: 90px 6%; }
+
+  .label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--blue);
+    margin-bottom: 12px;
+  }
+
+  .title {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(1.7rem, 3.5vw, 2.5rem);
+    font-weight: 800;
+    color: var(--navy);
+    line-height: 1.15;
+    margin-bottom: 16px;
+  }
+
+  .sub {
+    font-size: 1rem;
+    color: var(--grey);
+    line-height: 1.7;
+    max-width: 600px;
+    margin-bottom: 52px;
+  }
+
+  /* ── OPPORTUNITY ── */
+  #opportunity { background: var(--off); }
+
+  .opp-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .opp-card {
+    background: var(--white);
+    border-radius: 14px;
+    padding: 30px;
+    border: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .opp-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--blue), var(--sky));
+  }
+
+  .opp-icon { font-size: 2rem; margin-bottom: 14px; }
+  .opp-card h3 {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 8px;
+  }
+
+  .opp-card p { font-size: 0.88rem; color: var(--grey); line-height: 1.6; }
+
+  /* ── WHAT YOU GET ── */
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .benefit {
+    padding: 32px 28px;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    transition: box-shadow 0.25s, transform 0.25s;
+  }
+
+  .benefit:hover {
+    box-shadow: 0 10px 28px rgba(26,79,170,0.1);
+    transform: translateY(-3px);
+  }
+
+  .benefit-icon {
+    width: 52px; height: 52px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--blue), var(--sky));
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.4rem;
+    margin-bottom: 18px;
+  }
+
+  .benefit h3 {
+    font-family: 'Syne', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 8px;
+  }
+
+  .benefit p { font-size: 0.85rem; color: var(--grey); line-height: 1.6; }
+
+  /* ── TARGET COUNTRIES ── */
+  #countries { background: var(--ink); }
+  #countries .title { color: var(--white); }
+  #countries .sub { color: rgba(255,255,255,0.5); }
+  #countries .label { color: var(--gold); }
+
+  .countries-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 14px;
+  }
+
+  .country-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 16px 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: background 0.2s, border-color 0.2s;
+  }
+
+  .country-card:hover {
+    background: rgba(240,165,0,0.1);
+    border-color: rgba(240,165,0,0.3);
+  }
+
+  .country-flag { font-size: 1.5rem; }
+
+  .country-info strong {
+    display: block;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--white);
+  }
+
+  .country-info span {
+    font-size: 0.72rem;
+    color: rgba(255,255,255,0.4);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .country-card.open .country-info span { color: var(--gold); }
+
+  /* ── HOW IT WORKS ── */
+  #process { background: var(--off); }
+
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    position: relative;
+  }
+
+  .steps::before {
+    content: '';
+    position: absolute;
+    top: 36px;
+    left: 10%;
+    right: 10%;
+    height: 2px;
+    background: linear-gradient(90deg, var(--blue), var(--sky));
+    z-index: 0;
+  }
+
+  .step {
+    text-align: center;
+    padding: 0 16px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .step-num {
+    width: 72px; height: 72px;
+    border-radius: 50%;
+    background: var(--white);
+    border: 3px solid var(--blue);
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Syne', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--blue);
+    margin: 0 auto 20px;
+  }
+
+  .step h4 {
+    font-family: 'Syne', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 8px;
+  }
+
+  .step p { font-size: 0.82rem; color: var(--grey); line-height: 1.5; }
+
+  /* ── REQUIREMENTS ── */
+  .req-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+  }
+
+  .req-list { list-style: none; }
+
+  .req-list li {
+    display: flex;
+    gap: 14px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.9rem;
+    color: var(--ink);
+    line-height: 1.5;
+  }
+
+  .req-list li:last-child { border-bottom: none; }
+
+  .req-check {
+    width: 22px; height: 22px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--blue), var(--sky));
+    display: flex; align-items: center; justify-content: center;
+    color: white;
+    font-size: 0.7rem;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .req-highlight {
+    background: var(--navy);
+    border-radius: 16px;
+    padding: 36px;
+    color: white;
+  }
+
+  .req-highlight h3 {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-bottom: 18px;
+    color: var(--gold);
+  }
+
+  .req-highlight p {
+    font-size: 0.88rem;
+    color: rgba(255,255,255,0.65);
+    line-height: 1.7;
+    margin-bottom: 24px;
+  }
+
+  .req-highlight a {
+    display: inline-block;
+    padding: 12px 24px;
+    background: var(--gold);
+    color: var(--ink);
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.88rem;
+    text-decoration: none;
+    transition: opacity 0.2s;
+  }
+
+  .req-highlight a:hover { opacity: 0.88; }
+
+  /* ── APPLICATION FORM ── */
+  #apply { background: var(--ink); }
+  #apply .title { color: var(--white); }
+  #apply .sub { color: rgba(255,255,255,0.5); }
+  #apply .label { color: var(--gold); }
+
+  .form-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 60px;
+    align-items: start;
+  }
+
+  .form-info h3 {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--white);
+    margin-bottom: 20px;
+    line-height: 1.3;
+  }
+
+  .form-info-item {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 20px;
+  }
+
+  .form-info-icon {
+    width: 40px; height: 40px;
+    border-radius: 10px;
+    background: rgba(240,165,0,0.12);
+    border: 1px solid rgba(240,165,0,0.25);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1rem;
+    flex-shrink: 0;
+  }
+
+  .form-info-text strong {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 2px;
+  }
+
+  .form-info-text span {
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.45);
+    line-height: 1.5;
+  }
+
+  .app-form {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 36px;
+  }
+
+  .fg { margin-bottom: 18px; }
+
+  .fg label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--grey);
+    margin-bottom: 6px;
+  }
+
+  .fg input,
+  .fg select,
+  .fg textarea {
+    width: 100%;
+    padding: 11px 14px;
+    border: 1.5px solid var(--border);
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.88rem;
+    color: var(--ink);
+    background: var(--white);
+    transition: border-color 0.2s;
+    outline: none;
+  }
+
+  .fg input:focus,
+  .fg select:focus,
+  .fg textarea:focus { border-color: var(--blue); }
+
+  .fg textarea { resize: vertical; min-height: 100px; }
+
+  .fg-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+
+  .btn-apply {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, var(--blue), var(--sky));
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: 0.03em;
+    transition: opacity 0.2s, transform 0.2s;
+    margin-top: 6px;
+  }
+
+  .btn-apply:hover { opacity: 0.88; transform: translateY(-1px); }
+
+  #applySuccess {
+    display: none;
+    margin-top: 16px;
+    padding: 14px 18px;
+    background: #e6f9f0;
+    border-radius: 8px;
+    color: #1a7a4a;
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+
+  /* ── WHATSAPP FLOAT ── */
+  .wa-float {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    z-index: 200;
+    width: 56px; height: 56px;
+    border-radius: 50%;
+    background: #25D366;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+    text-decoration: none;
+    transition: transform 0.2s;
+  }
+
+  .wa-float:hover { transform: scale(1.1); }
+
+  /* ── FOOTER ── */
+  footer {
+    background: #060d1a;
+    padding: 32px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .footer-brand {
+    font-family: 'Syne', sans-serif;
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--white);
+  }
+
+  .footer-brand span { color: var(--gold); }
+
+  footer p {
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.35);
+  }
+
+  footer a {
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.45);
+    text-decoration: none;
+  }
+
+  footer a:hover { color: var(--gold); }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 900px) {
+    .opp-grid { grid-template-columns: 1fr; }
+    .benefits-grid { grid-template-columns: 1fr 1fr; }
+    .steps { grid-template-columns: 1fr 1fr; gap: 32px; }
+    .steps::before { display: none; }
+    .req-wrap { grid-template-columns: 1fr; }
+    .form-wrap { grid-template-columns: 1fr; }
+  }
+
+  @media (max-width: 600px) {
+    .benefits-grid { grid-template-columns: 1fr; }
+    .steps { grid-template-columns: 1fr; }
+    .fg-row { grid-template-columns: 1fr; }
+    .hero-stats { gap: 24px; }
+    .countries-grid { grid-template-columns: 1fr 1fr; }
+  }
+
+  /* ── REVEAL ── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  🌍 &nbsp;Distributor Positions Now Open Across Africa — Limited to One Per Country &nbsp;|&nbsp; Apply Today
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-brand">COSTECH <span>·</span> Engineering Services</a>
+  <a href="#apply" class="nav-cta">Apply Now</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-pill">Distributor Partnership Programme</div>
+    <h1>Own the Coding &<br>Marking Market in<br><em>Your Country.</em></h1>
+    <p>Costech Engineering Services is recruiting exclusive country distributors across Africa for TIJ industrial coding and marking printers — manufactured by Hangzhou Dongning Technology Co., Ltd., China. One distributor per country. Serious enquiries only.</p>
+    <div class="hero-btns">
+      <a href="#apply" class="btn-gold">Apply for Distributorship →</a>
+      <a href="#opportunity" class="btn-ghost">Learn More</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hstat">
+        <div class="hstat-num">54</div>
+        <div class="hstat-label">AU Member States</div>
+      </div>
+      <div class="hstat">
+        <div class="hstat-num">1</div>
+        <div class="hstat-label">Distributor Per Country</div>
+      </div>
+      <div class="hstat">
+        <div class="hstat-num">100%</div>
+        <div class="hstat-label">Exclusive Territory</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OPPORTUNITY -->
+<section id="opportunity">
+  <div class="reveal">
+    <div class="label">The Opportunity</div>
+    <h2 class="title">Why This Market. Why Now.</h2>
+    <p class="sub">Africa's manufacturing sector is expanding rapidly. NAFDAC, KEBS, FDA Ghana, and regulatory bodies across the continent are enforcing stricter product coding and traceability requirements — creating urgent, consistent demand for TIJ coding solutions.</p>
+  </div>
+  <div class="opp-grid reveal">
+    <div class="opp-card">
+      <div class="opp-icon">📈</div>
+      <h3>Growing Regulatory Pressure</h3>
+      <p>Manufacturers across Africa are legally required to print expiry dates, batch codes, and traceability marks on products. This is not optional — it is a compliance requirement driving consistent equipment demand.</p>
+    </div>
+    <div class="opp-card">
+      <div class="opp-icon">🏭</div>
+      <h3>Underserved Industrial Market</h3>
+      <p>Food & beverage, pharma, FMCG, plastics, cables, and agro-processing industries in most African countries currently have limited access to quality, affordable TIJ coding solutions. The gap is your opportunity.</p>
+    </div>
+    <div class="opp-card">
+      <div class="opp-icon">🔄</div>
+      <h3>Recurring Revenue Model</h3>
+      <p>Every printer sold requires regular ink cartridge replacements. As your customer base grows, so does your recurring consumables revenue — making this a sustainable, compounding business.</p>
+    </div>
+    <div class="opp-card">
+      <div class="opp-icon">🤝</div>
+      <h3>First-Mover Advantage</h3>
+      <p>Positions are strictly one per country. The distributor who moves first secures the exclusive territory. Once a country is taken, it is closed to new applicants.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT YOU GET -->
+<section id="benefits">
+  <div class="reveal">
+    <div class="label">Partnership Benefits</div>
+    <h2 class="title">What Costech Offers You</h2>
+    <p class="sub">We do not just hand you products and walk away. We invest in your success because your growth is our growth across the continent.</p>
+  </div>
+  <div class="benefits-grid reveal">
+    <div class="benefit">
+      <div class="benefit-icon">🗺️</div>
+      <h3>Exclusive Country Territory</h3>
+      <p>You are the sole authorised Costech distributor in your country. No other distributor will compete with you in your territory — protecting your market and investment.</p>
+    </div>
+    <div class="benefit">
+      <div class="benefit-icon">🎓</div>
+      <h3>Product Training & Certification</h3>
+      <p>Full technical training on all TIJ printer models — operation, maintenance, troubleshooting, and installation. You will be equipped to support your customers confidently.</p>
+    </div>
+    <div class="benefit">
+      <div class="benefit-icon">📣</div>
+      <h3>Marketing Support</h3>
+      <p>Branded brochures, product catalogues, digital marketing materials, and co-branded content to help you sell effectively in your market from day one.</p>
+    </div>
+    <div class="benefit">
+      <div class="benefit-icon">💰</div>
+      <h3>Competitive Distributor Pricing</h3>
+      <p>Access to factory-direct pricing that gives you healthy margins whether you are selling equipment, ink cartridges, or service contracts to end users.</p>
+    </div>
+    <div class="benefit">
+      <div class="benefit-icon">🔧</div>
+      <h3>Technical & After-Sales Support</h3>
+      <p>Direct access to Costech technical team for product queries, troubleshooting guidance, and escalation support — so you can deliver excellent after-sales service to your customers.</p>
+    </div>
+    <div class="benefit">
+      <div class="benefit-icon">📦</div>
+      <h3>Flexible Supply Chain</h3>
+      <p>Order directly through Costech with reliable supply from Hangzhou Dongning Technology Co., Ltd. — with guidance on importation, customs, and logistics for your country.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TARGET COUNTRIES -->
+<section id="countries">
+  <div class="reveal">
+    <div class="label">Open Territories</div>
+    <h2 class="title">Priority Markets Across Africa</h2>
+    <p class="sub">We are actively recruiting distributors in the following high-priority industrial markets. All 54 AU member states are open — but these are our immediate focus.</p>
+  </div>
+  <div class="countries-grid reveal">
+    <div class="country-card open">
+      <div class="country-flag">🇳🇬</div>
+      <div class="country-info"><strong>Nigeria</strong><span>Sub-regions open</span></div>
+    </div>
+    <div class="country-card open">
+      <div class="country-flag">🇿🇦</div>
+      <div class="country-info"><strong>South Africa</strong><span>Open</span></div>
+    </div>
+    <div class="country-card open">
+      <div class="country-flag">🇪🇬</div>
+      <div class="country-info"><strong>Egypt</strong><span>Open</span></div>
+    </div>
+    <div class="country-card open">
+      <div class="country-flag">🇰🇪</div>
+      <div class="country-info"><strong>Kenya</strong><span>Open</span></div>
+    </div>
+    <div class="country-card open">
+      <div class="country-flag">🇬🇭</div>
+      <div class="country-info"><strong>Ghana</strong><span>Open</span></div>
+    </div>
+    <div class="country-card open">
+      <div class="country-flag">🇪🇹</div>
+      <div class="country-info"><strong>Ethiopia</strong><span>Open</span></div>
+    </div>
+    <div class="country-card open">
+      <div class="country-flag">🇹🇿</div>
+      <div class="country-info"><strong>Tanzania</strong><span>Open</span></div>
+    </div>
+    <div class="country-card open">
+      <div class="country-flag">🇨🇮</div>
+      <div class="country-info"><strong>Côte d'Ivoire</strong><span>Open</span></div>
+    </div>
+    <div class="country-card open">
+      <div class="country-flag">🇨🇲</div>
+      <div class="country-info"><strong>Cameroon</strong><span>Open</span></div>
+    </div>
+    <div class="country-card open">
+      <div class="country-flag">🇸🇳</div>
+      <div class="country-info"><strong>Senegal</strong><span>Open</span></div>
+    </div>
+    <div class="country-card open">
+      <div class="country-flag">🇺🇬</div>
+      <div class="country-info"><strong>Uganda</strong><span>Open</span></div>
+    </div>
+    <div class="country-card open">
+      <div class="country-flag">🇲🇦</div>
+      <div class="country-info"><strong>Morocco</strong><span>Open</span></div>
+    </div>
+    <div class="country-card open">
+      <div class="country-flag">🇿🇲</div>
+      <div class="country-info"><strong>Zambia</strong><span>Open</span></div>
+    </div>
+    <div class="country-card open">
+      <div class="country-flag">🇷🇼</div>
+      <div class="country-info"><strong>Rwanda</strong><span>Open</span></div>
+    </div>
+    <div class="country-card open">
+      <div class="country-flag">🇦🇴</div>
+      <div class="country-info"><strong>Angola</strong><span>Open</span></div>
+    </div>
+    <div class="country-card open">
+      <div class="country-flag">🌍</div>
+      <div class="country-info"><strong>All Other AU States</strong><span>Open</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="process">
+  <div class="reveal">
+    <div class="label">How It Works</div>
+    <h2 class="title">From Application to Active Distributor</h2>
+    <p class="sub">A straightforward, transparent process designed to get qualified distributors operational quickly.</p>
+  </div>
+  <div class="steps reveal">
+    <div class="step">
+      <div class="step-num">1</div>
+      <h4>Submit Application</h4>
+      <p>Complete the application form below with your business details and target country.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <h4>Review & Discussion</h4>
+      <p>Costech reviews your application and schedules a call to discuss the partnership terms and your market.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <h4>Agreement & Training</h4>
+      <p>Sign the exclusive distribution agreement and complete product training with Costech's technical team.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <h4>Launch & Sell</h4>
+      <p>Receive your first stock, marketing materials, and go live as the official Costech distributor in your country.</p>
+    </div>
+  </div>
+</section>
+
+<!-- REQUIREMENTS -->
+<section id="requirements">
+  <div class="reveal">
+    <div class="label">Who We Are Looking For</div>
+    <h2 class="title">Distributor Requirements</h2>
+    <p class="sub">We are selective because exclusivity demands it. We are looking for serious business operators who can represent Costech professionally in their market.</p>
+  </div>
+  <div class="req-wrap reveal">
+    <ul class="req-list">
+      <li>
+        <div class="req-check">✓</div>
+        <div><strong>Registered Business Entity</strong><br>Must be a legally registered business in your country — sole proprietorship, limited company, or partnership.</div>
+      </li>
+      <li>
+        <div class="req-check">✓</div>
+        <div><strong>Industrial or B2B Network</strong><br>Existing connections to manufacturers, factories, or industrial buyers in your country is a strong advantage.</div>
+      </li>
+      <li>
+        <div class="req-check">✓</div>
+        <div><strong>Commitment to the Territory</strong><br>You must be willing to actively develop and grow the market — not just hold the distributorship passively.</div>
+      </li>
+      <li>
+        <div class="req-check">✓</div>
+        <div><strong>Capacity to Import & Stock</strong><br>Ability to handle importation of equipment and maintain reasonable stock levels for your market.</div>
+      </li>
+      <li>
+        <div class="req-check">✓</div>
+        <div><strong>After-Sales Service Capability</strong><br>Willingness to provide basic maintenance and support to end users — training will be provided by Costech.</div>
+      </li>
+      <li>
+        <div class="req-check">✓</div>
+        <div><strong>Strong Communication</strong><br>Ability to communicate effectively in English or French (depending on your region) for training and support coordination.</div>
+      </li>
+    </ul>
+    <div class="req-highlight">
+      <h3>Not sure if you qualify?</h3>
+      <p>If you are serious about building a business in industrial coding and marking solutions and you operate in Africa — we want to hear from you. We will review every application and respond within 5 business days.</p>
+      <p style="margin-bottom:0">Sub-regional distributors may also be considered in larger markets where one country distributor cannot cover the full territory alone.</p>
+      <br>
+      <a href="#apply">Submit Your Application →</a>
+    </div>
+  </div>
+</section>
+
+<!-- APPLICATION FORM -->
+<section id="apply">
+  <div class="reveal">
+    <div class="label">Apply Now</div>
+    <h2 class="title">Distributor Application Form</h2>
+    <p class="sub">Fill in the form below. All applications are reviewed personally by the Costech team. We respond within 5 business days.</p>
+  </div>
+  <div class="form-wrap reveal">
+    <div class="form-info">
+      <h3>Ready to build something significant in your country?</h3>
+      <div class="form-info-item">
+        <div class="form-info-icon">📧</div>
+        <div class="form-info-text">
+          <strong>Email Us Directly</strong>
+          <span>info@costechengineering.com</span>
+        </div>
+      </div>
+      <div class="form-info-item">
+        <div class="form-info-icon">📞</div>
+        <div class="form-info-text">
+          <strong>Call / WhatsApp</strong>
+          <span>+234 812 348 0152</span>
+        </div>
+      </div>
+      <div class="form-info-item">
+        <div class="form-info-icon">🌍</div>
+        <div class="form-info-text">
+          <strong>Coverage</strong>
+          <span>All 54 African Union member states — one exclusive distributor per country</span>
+        </div>
+      </div>
+      <div class="form-info-item">
+        <div class="form-info-icon">⚡</div>
+        <div class="form-info-text">
+          <strong>Response Time</strong>
+          <span>Within 5 business days of application submission</span>
+        </div>
+      </div>
+      <a href="https://wa.me/2348123480152?text=Hello%20Costech%2C%20I%20am%20interested%20in%20becoming%20a%20distributor%20in%20my%20country." target="_blank" style="display:flex;align-items:center;gap:10px;margin-top:28px;padding:14px 20px;background:#25D366;color:white;border-radius:8px;font-weight:700;font-size:0.9rem;text-decoration:none;width:fit-content;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Chat on WhatsApp
+      </a>
+    </div>
+
+    <div class="app-form">
+      <form id="distForm" action="https://formspree.io/f/maqzajgl" method="POST">
+        <input type="hidden" name="_subject" value="New Distributor Application — Costech Engineering">
+        <input type="hidden" name="application_type" id="appTypeHidden" value="Country Distributor">
+        <div class="fg-row">
+          <div class="fg">
+            <label>Full Name *</label>
+            <input type="text" name="full_name" placeholder="Your full name" required>
+          </div>
+          <div class="fg">
+            <label>Company Name *</label>
+            <input type="text" name="company" placeholder="Registered business name" required>
+          </div>
+        </div>
+        <div class="fg-row">
+          <div class="fg">
+            <label>Country *</label>
+            <select name="country" id="countrySelect" onchange="handleCountryChange(this.value)" required>
+              <option value="">Select your country...</option>
+              <option value="Nigeria|taken">Nigeria 🔴 Country Taken — Zones Available</option>
+              <option value="South Africa|open">South Africa</option>
+              <option value="Egypt|open">Egypt</option>
+              <option value="Kenya|open">Kenya</option>
+              <option value="Ghana|open">Ghana</option>
+              <option value="Ethiopia|open">Ethiopia</option>
+              <option value="Tanzania|open">Tanzania</option>
+              <option value="Uganda|open">Uganda</option>
+              <option value="Morocco|open">Morocco</option>
+              <option value="Côte d'Ivoire|open">Côte d'Ivoire</option>
+              <option value="Cameroon|open">Cameroon</option>
+              <option value="Senegal|open">Senegal</option>
+              <option value="Zambia|open">Zambia</option>
+              <option value="Zimbabwe|open">Zimbabwe</option>
+              <option value="Rwanda|open">Rwanda</option>
+              <option value="Angola|open">Angola</option>
+              <option value="Mozambique|open">Mozambique</option>
+              <option value="Sudan|open">Sudan</option>
+              <option value="Algeria|open">Algeria</option>
+              <option value="Tunisia|open">Tunisia</option>
+              <option value="Libya|open">Libya</option>
+              <option value="DR Congo|open">DR Congo</option>
+              <option value="Other|open">Other African Country</option>
+            </select>
+          </div>
+          <div class="fg">
+            <label>City *</label>
+            <input type="text" name="city" placeholder="Your city" required>
+          </div>
+        </div>
+
+        <!-- STATUS BANNER -->
+        <div id="statusBanner" style="display:none; padding:12px 16px; border-radius:8px; font-size:0.85rem; font-weight:600; margin-bottom:16px;"></div>
+
+        <!-- APPLICATION TYPE (auto-set, shown for clarity) -->
+        <div class="fg" id="appTypeGroup" style="display:none;">
+          <label>Application Type</label>
+          <div id="appTypeDisplay" style="padding:11px 14px; border-radius:8px; font-size:0.88rem; font-weight:600; background:var(--off); border:1.5px solid var(--border);"></div>
+        </div>
+
+        <!-- ZONE SELECTION (shown when country is taken) -->
+        <div class="fg" id="zoneGroup" style="display:none;">
+          <label>Select Your Zone *</label>
+          <select name="zone" id="zoneSelect" onchange="handleZoneChange(this.value)">
+            <option value="">Select a zone...</option>
+          </select>
+          <div id="zoneStatus" style="margin-top:6px; font-size:0.78rem; font-weight:600;"></div>
+        </div>
+
+        <div class="fg-row">
+          <div class="fg">
+            <label>Email Address *</label>
+            <input type="email" name="email" placeholder="your@email.com" required>
+          </div>
+          <div class="fg">
+            <label>Phone / WhatsApp *</label>
+            <input type="tel" name="phone" placeholder="+country code..." required>
+          </div>
+        </div>
+        <div class="fg">
+          <label>Current Business / Industry</label>
+          <input type="text" name="industry" placeholder="e.g. Industrial equipment supply, FMCG distribution...">
+        </div>
+        <div class="fg">
+          <label>Why do you want to be a Costech Distributor? *</label>
+          <textarea name="motivation" placeholder="Tell us about your market, your network, and why you are the right person for this territory..." required></textarea>
+        </div>
+        <div class="fg">
+          <label>How did you hear about us?</label>
+          <select name="source">
+            <option value="">Select...</option>
+            <option>LinkedIn</option>
+            <option>Facebook</option>
+            <option>WhatsApp</option>
+            <option>Google Search</option>
+            <option>Referred by someone</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <button type="submit" class="btn-apply" id="applyBtn">SUBMIT APPLICATION →</button>
+        <div id="applySuccess">✓ Application received! We will review it and get back to you within 5 business days.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">COSTECH <span>·</span> Engineering Services</div>
+  <p>© 2025 Costech Engineering Services. Oba, Anambra State, Nigeria.</p>
+  <a href="index.html">← Back to Main Website</a>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/2348123480152?text=Hello%20Costech%2C%20I%20am%20interested%20in%20becoming%20a%20distributor." target="_blank" class="wa-float" title="Chat on WhatsApp">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+  // ── TERRITORY DATA ──
+  // status: 'open' | 'taken' | 'full' (all zones taken)
+  // zones: { zoneName: 'open' | 'taken' }
+  const TERRITORIES = {
+    'Nigeria': {
+      status: 'taken',
+      zones: {
+        'North-West Zone': 'open',
+        'North-East Zone': 'open',
+        'North-Central Zone': 'open',
+        'South-West Zone': 'open',
+        'South-East Zone': 'open',
+        'South-South Zone': 'open'
+      }
+    },
+    'South Africa': {
+      status: 'open',
+      zones: {
+        'Northern Zone (Limpopo, Mpumalanga, North West)': 'open',
+        'Central Zone (Gauteng, Free State)': 'open',
+        'Eastern Zone (KwaZulu-Natal, Eastern Cape)': 'open',
+        'Western Zone (Western Cape, Northern Cape)': 'open'
+      }
+    },
+    'Egypt': {
+      status: 'open',
+      zones: {
+        'Northern Zone (Cairo, Alexandria, Delta)': 'open',
+        'Southern Zone (Upper Egypt, Aswan)': 'open',
+        'Eastern Zone (Sinai, Suez Canal)': 'open',
+        'Western Zone (Western Desert cities)': 'open'
+      }
+    },
+    'Kenya': {
+      status: 'open',
+      zones: {
+        'Nairobi & Central Zone': 'open',
+        'Coast Zone (Mombasa, Kilifi)': 'open',
+        'Western Zone (Kisumu, Eldoret)': 'open',
+        'North & Eastern Zone': 'open'
+      }
+    },
+    'Ghana': {
+      status: 'open',
+      zones: {
+        'Greater Accra & Southern Zone': 'open',
+        'Ashanti & Middle Zone': 'open',
+        'Northern Zone': 'open'
+      }
+    },
+    'Ethiopia': {
+      status: 'open',
+      zones: {
+        'Central Zone (Addis Ababa & surrounds)': 'open',
+        'Northern Zone (Amhara, Tigray)': 'open',
+        'Southern Zone (SNNP, Sidama)': 'open',
+        'Eastern Zone (Somali, Dire Dawa)': 'open'
+      }
+    },
+    'Tanzania': {
+      status: 'open',
+      zones: {
+        'Northern Zone (Arusha, Kilimanjaro, Moshi)': 'open',
+        'Central Zone (Dodoma, Singida)': 'open',
+        'Eastern Zone (Dar es Salaam, Coast)': 'open',
+        'Western & Southern Zone': 'open'
+      }
+    },
+    'Uganda': {
+      status: 'open',
+      zones: {
+        'Central Zone (Kampala & surrounds)': 'open',
+        'Eastern Zone (Jinja, Mbale)': 'open',
+        'Northern Zone (Gulu, Lira)': 'open',
+        'Western Zone (Mbarara, Fort Portal)': 'open'
+      }
+    },
+    'Morocco': {
+      status: 'open',
+      zones: {
+        'Northern Zone (Casablanca, Rabat, Tangier)': 'open',
+        'Central Zone (Fes, Meknes, Beni Mellal)': 'open',
+        'Southern Zone (Marrakech, Agadir, Laayoune)': 'open'
+      }
+    },
+    'Côte d\'Ivoire': {
+      status: 'open',
+      zones: {
+        'Southern Zone (Abidjan & surrounds)': 'open',
+        'Central Zone (Bouaké, Yamoussoukro)': 'open',
+        'Northern Zone (Korhogo, Odienné)': 'open'
+      }
+    },
+    'Cameroon': {
+      status: 'open',
+      zones: {
+        'Centre & South Zone (Yaoundé)': 'open',
+        'Littoral & West Zone (Douala)': 'open',
+        'North & Adamawa Zone': 'open',
+        'Northwest & Southwest Zone': 'open'
+      }
+    },
+    'Senegal': {
+      status: 'open',
+      zones: {
+        'Western Zone (Dakar & surrounds)': 'open',
+        'Central & Northern Zone': 'open',
+        'Southern Zone (Casamance, Ziguinchor)': 'open'
+      }
+    },
+    'Zambia': {
+      status: 'open',
+      zones: {
+        'Central Zone (Lusaka & surrounds)': 'open',
+        'Copperbelt Zone (Kitwe, Ndola)': 'open',
+        'Northern & Eastern Zone': 'open',
+        'Southern & Western Zone': 'open'
+      }
+    },
+    'Zimbabwe': {
+      status: 'open',
+      zones: {
+        'Northern Zone (Harare & surrounds)': 'open',
+        'Southern Zone (Bulawayo & surrounds)': 'open',
+        'Eastern & Western Zone': 'open'
+      }
+    },
+    'Rwanda': {
+      status: 'open',
+      zones: {
+        'Kigali & Eastern Zone': 'open',
+        'Northern & Western Zone': 'open',
+        'Southern Zone': 'open'
+      }
+    },
+    'Angola': {
+      status: 'open',
+      zones: {
+        'Northern Zone (Luanda & surrounds)': 'open',
+        'Central Zone (Huambo, Bié)': 'open',
+        'Southern Zone (Huíla, Namibe)': 'open'
+      }
+    },
+    'Mozambique': { status: 'open', zones: {} },
+    'Sudan':      { status: 'open', zones: {} },
+    'Algeria':    { status: 'open', zones: {} },
+    'Tunisia':    { status: 'open', zones: {} },
+    'Libya':      { status: 'open', zones: {} },
+    'DR Congo':   { status: 'open', zones: {} },
+    'Other':      { status: 'open', zones: {} }
+  };
+
+  function handleCountryChange(val) {
+    if (!val) return resetForm();
+
+    const [country, _] = val.split('|');
+    const territory = TERRITORIES[country];
+    const banner = document.getElementById('statusBanner');
+    const zoneGroup = document.getElementById('zoneGroup');
+    const zoneSelect = document.getElementById('zoneSelect');
+    const appTypeGroup = document.getElementById('appTypeGroup');
+    const appTypeDisplay = document.getElementById('appTypeDisplay');
+    const hidden = document.getElementById('appTypeHidden');
+
+    // Reset zone
+    zoneSelect.innerHTML = '<option value="">Select a zone...</option>';
+    document.getElementById('zoneStatus').textContent = '';
+
+    if (!territory) return;
+
+    if (territory.status === 'open') {
+      // Country available
+      banner.style.display = 'block';
+      banner.style.background = '#e6f9f0';
+      banner.style.color = '#1a7a4a';
+      banner.style.border = '1.5px solid #a3e4c1';
+      banner.innerHTML = '✅ &nbsp;<strong>' + country + '</strong> — Country distributor position is <strong>OPEN</strong>. You are applying for the exclusive country distributorship.';
+
+      appTypeGroup.style.display = 'block';
+      appTypeDisplay.style.background = '#e6f9f0';
+      appTypeDisplay.style.color = '#1a7a4a';
+      appTypeDisplay.textContent = '🌍 Country Distributor — Exclusive rights for ' + country;
+      hidden.value = 'Country Distributor — ' + country;
+      zoneGroup.style.display = 'none';
+
+    } else if (territory.status === 'taken') {
+      // Country taken — show zones
+      banner.style.display = 'block';
+      banner.style.background = '#fff3d0';
+      banner.style.color = '#8a5c00';
+      banner.style.border = '1.5px solid #f0c060';
+      banner.innerHTML = '🔴 &nbsp;<strong>' + country + '</strong> — Country distributor position is <strong>TAKEN</strong>. You may apply for a <strong>Sub-Regional Zone</strong> below. Sub-regional distributors operate under the country distributor.';
+
+      appTypeGroup.style.display = 'block';
+      appTypeDisplay.style.background = '#fff3d0';
+      appTypeDisplay.style.color = '#8a5c00';
+      appTypeDisplay.textContent = '📍 Sub-Regional Distributor — Select your zone below';
+      hidden.value = 'Sub-Regional Distributor — ' + country;
+      zoneGroup.style.display = 'block';
+
+      const zones = territory.zones;
+      Object.entries(zones).forEach(([zone, status]) => {
+        const opt = document.createElement('option');
+        opt.value = zone + '|' + status;
+        opt.textContent = status === 'taken'
+          ? zone + ' 🔴 Taken'
+          : zone + ' ✅ Available';
+        if (status === 'taken') opt.disabled = true;
+        zoneSelect.appendChild(opt);
+      });
+
+    } else if (territory.status === 'full') {
+      banner.style.display = 'block';
+      banner.style.background = '#fdecea';
+      banner.style.color = '#b71c1c';
+      banner.style.border = '1.5px solid #f5a0a0';
+      banner.innerHTML = '🚫 &nbsp;<strong>' + country + '</strong> — All positions (country + all zones) are currently <strong>FILLED</strong>. You may still submit your details to be placed on the waitlist.';
+      appTypeGroup.style.display = 'block';
+      appTypeDisplay.style.background = '#fdecea';
+      appTypeDisplay.style.color = '#b71c1c';
+      appTypeDisplay.textContent = '⏳ Waitlist — ' + country + ' (All positions filled)';
+      hidden.value = 'Waitlist — ' + country;
+      zoneGroup.style.display = 'none';
+    }
+  }
+
+  function handleZoneChange(val) {
+    if (!val) return;
+    const [zone, status] = val.split('|');
+    const zoneStatus = document.getElementById('zoneStatus');
+    const hidden = document.getElementById('appTypeHidden');
+    const countryVal = document.getElementById('countrySelect').value.split('|')[0];
+
+    if (status === 'open') {
+      zoneStatus.style.color = '#1a7a4a';
+      zoneStatus.textContent = '✅ This zone is available. You are applying as a Sub-Regional Distributor for ' + zone + '.';
+      hidden.value = 'Sub-Regional Distributor — ' + countryVal + ' — ' + zone;
+    } else {
+      zoneStatus.style.color = '#b71c1c';
+      zoneStatus.textContent = '🔴 This zone is already taken. Please select another available zone.';
+    }
+  }
+
+  function resetForm() {
+    document.getElementById('statusBanner').style.display = 'none';
+    document.getElementById('zoneGroup').style.display = 'none';
+    document.getElementById('appTypeGroup').style.display = 'none';
+    document.getElementById('zoneStatus').textContent = '';
+    document.getElementById('appTypeHidden').value = 'Country Distributor';
+  }
+
+  // Reveal on scroll
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // Smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const t = document.querySelector(a.getAttribute('href'));
+      if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth' }); }
+    });
+  });
+
+  // Form submission
+  document.getElementById('distForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const btn = document.getElementById('applyBtn');
+    btn.textContent = 'SUBMITTING...';
+    btn.disabled = true;
+    try {
+      const res = await fetch(this.action, {
+        method: 'POST',
+        body: new FormData(this),
+        headers: { 'Accept': 'application/json' }
+      });
+      if (res.ok) {
+        document.getElementById('applySuccess').style.display = 'block';
+        this.reset();
+        resetForm();
+        btn.textContent = 'SUBMIT APPLICATION →';
+        btn.disabled = false;
+      } else {
+        btn.textContent = 'FAILED. TRY AGAIN →';
+        btn.disabled = false;
+      }
+    } catch {
+      btn.textContent = 'FAILED. TRY AGAIN →';
+      btn.disabled = false;
+    }
+  });
+</script>
+</body>
+</html>
